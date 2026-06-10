@@ -5,7 +5,6 @@ import random
 import struct
 import time
 import os
-import sys
 
 """Statistiken"""
 total_multicasts = 0  # Anzahl gezündeter Raketen (dieser Prozess)
@@ -17,7 +16,7 @@ round_start_ts = None  # Zeitstempel Rundenstart
 parser = argparse.ArgumentParser()
 parser.add_argument('--conf', default='ring.conf', help='Pfad zur Konfigurationsdatei')
 parser.add_argument('--pid', type=int, required=True, help='Eigene Prozess-ID')
-parser.add_argument('--p', type=float, default=0.9, help='Startzündwahrscheinlichkeit')
+parser.add_argument('--p', type=float, default=1, help='Startzündwahrscheinlichkeit')
 parser.add_argument('--k', type=int, default=3, help='Leere Runden bis Terminierung')
 parser.add_argument('--statsdir', default='.', help='Ablageort der Statistik-JSON')
 parser.add_argument('--unicast', action='store_true', help='Raketen per Unicast statt Multicast (Fallback)')
