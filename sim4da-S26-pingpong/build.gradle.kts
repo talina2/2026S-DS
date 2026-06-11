@@ -39,7 +39,8 @@ tasks.named<Test>("test") {
 
 application {
     //mainClass = "pingpong.PingPongSimulation"
-    mainClass = "firework.FireworkSimulation"
+    //mainClass = "firework.FireworkSimulation"
+    mainClass = "firework.Consistent_FireworkSimulation"
     applicationDefaultJvmArgs = listOf("-Xmx8g")
 }
 
