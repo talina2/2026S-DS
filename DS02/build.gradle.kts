@@ -29,7 +29,7 @@ sourceSets {
 }
 
 application {
-    mainClass = "bank.BankSimulation"
+    mainClass = "bank.BankSnapshot"
 }
 
 tasks.named<JavaExec>("run") {
