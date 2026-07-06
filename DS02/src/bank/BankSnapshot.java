@@ -149,6 +149,9 @@ public class BankSnapshot {
             int control = n + states + channels;
             System.out.printf("Kontrollnachrichten = %d (%d Anfragen + %d StateReports + %d ChannelReports)%n",
                     control, n, states, channels);
+
+            // Anteil des Geldes, das beim Schnitt unterwegs war
+            System.out.printf("Anteil unterwegs = %.1f%%%n", channelSum * 100.0 / S);
         }
     }
 
